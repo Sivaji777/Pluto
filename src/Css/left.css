@@ -37,7 +37,7 @@
 .main-section {
     background-color: #d1d1d1;
     width: 100%;
-    min-height: 115vh;
+    min-height: 180vh;
 
 }
 
@@ -155,10 +155,10 @@
 
 
 .program-block-col12 {
-    width: 70px;
-    height: 60px;
+    width: 68px;
+    height: 57px;
     border-radius: 4px;
-    padding-left: 15px;
+    padding-left: 13px;
     padding-top: 7px;
     background: rgba(244, 53, 231, 0.2);
 }
