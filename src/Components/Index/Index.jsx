@@ -16,6 +16,42 @@ import Footer from '../Common/footer';
 import Left from '../Common/Left';
 import Logout from '../Common/Logout';
 import useWindowDimensions from '../Common/useWindowDimensions';
+import arrow from '../../images/arrow.png'
+import digree from '../../images/digree.png'
+import threedots from '../../images/threedots.png'
+import book from '../../images/book.png'
+import book1 from '../../images/book1.png'
+
+import Avatar from '../../images/Avatar.png'
+import a1 from '../../images/a1.png'
+
+import a2 from '../../images/a2.png'
+
+import a3 from '../../images/a3.png'
+
+import three from '../../images/three.png'
+import four from '../../images/four.png'
+import seven from '../../images/seven.png'
+import five from '../../images/five.png'
+
+import dp1 from '../../images/dp1.png'
+import dp2 from '../../images/dp2.png'
+import dp3 from '../../images/dp3.png'
+import dp4 from '../../images/dp4.png'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function Index() {
 
@@ -681,212 +717,246 @@ function Index() {
                         </button>
                     </div>
                 </nav>
-                <div className='bg-danger' >sdas
-                </div>
-                <div className="main-panel">
-
-                    <div className="content-wrapper pb-0">
-
-                        {/* <div className="page-header flex-wrap">
-                            <h3 className="mb-0">Dashboard </h3>
-                        </div> */}
-
-                        <div className="top-box">
-                            <h3>Hello {localStorage.getItem("UserFullName")}</h3>
-                            <p>You have {ReviewNo} pending applications for review.</p>
-                        </div> 
-                        <div className='home-section bg-danger' >
-                            {/* <div className='d-flex' >
-                                <div className='col-8 bg-primary home-section-left' >
-                                    <div className='home-section-one' >
-
-                                    </div>
-                                </div>
-                                <div className='col-4 bg-danger home-section-right' >
-
-                                </div>
-                            </div> */}
-                        </div>
-
-
-                        <div className="">
-
-                            <div className="col-xl-12 col-lg-12 stretch-card grid-margin">
-                                <Slider {...SliderSettings}>
-                                    <div className="stretch-card grid-margin grid-margin-sm-0">
-                                        <div className="no-line card bg-warning">
-                                            <div className="box1 card-body px-3 py-4">
-                                                <div className="d-flex justify-content-between align-items-start">
-                                                    <div className="color-card">
-
-                                                        <h2 className="text-white"> {DashboardNo.totalNo}</h2>
-                                                        <p className="mb-0 color-card-head">Applicants</p>
-                                                    </div>
-
-                                                </div>
-                                                <h6 className="text-white">Submitted</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="stretch-card grid-margin grid-margin-sm-0">
-                                        <div className="no-line card bg-warning">
-                                            <div className="box2 card-body px-3 py-4">
-                                                <div className="d-flex justify-content-between align-items-start">
-                                                    <div className="color-card">
-
-                                                        <h2 className="text-white"> {DashboardNo.needToReview}</h2>
-                                                        <p className="mb-0 color-card-head">Applicants</p>
-                                                    </div>
-                                                </div>
-                                                <h6 className="text-white">need to review</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="stretch-card grid-margin grid-margin-sm-0">
-                                        <div className="no-line card bg-warning">
-                                            <div className="box3 card-body px-3 py-4">
-                                                <div className="d-flex justify-content-between align-items-start">
-                                                    <div className="color-card">
-
-                                                        <h2 className="text-white"> {DashboardNo.shortlisted}</h2>
-                                                        <p className="mb-0 color-card-head">Applicants</p>
-                                                    </div>
-                                                </div>
-                                                <h6 className="text-white">short listed</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="stretch-card grid-margin grid-margin-sm-0">
-                                        <div className="no-line card bg-warning">
-                                            <div className="box1 card-body px-3 py-4">
-                                                <div className="d-flex justify-content-between align-items-start">
-                                                    <div className="color-card">
-
-                                                        <h2 className="text-white"> {DashboardNo.totalNo}</h2>
-                                                        <p className="mb-0 color-card-head">Applicants</p>
-                                                    </div>
-                                                </div>
-                                                <h6 className="text-white">Submitted</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="stretch-card grid-margin grid-margin-sm-0">
-                                        <div className="no-line card bg-warning">
-                                            <div className="box2 card-body px-3 py-4">
-                                                <div className="d-flex justify-content-between align-items-start">
-                                                    <div className="color-card">
-
-                                                        <h2 className="text-white"> {DashboardNo.needToReview}</h2>
-                                                        <p className="mb-0 color-card-head">Applicants</p>
-                                                    </div>
-                                                </div>
-                                                <h6 className="text-white">need to review</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="stretch-card grid-margin grid-margin-sm-0">
-                                        <div className="no-line card bg-warning">
-                                            <div className="box3 card-body px-3 py-4">
-                                                <div className="d-flex justify-content-between align-items-start">
-                                                    <div className="color-card">
-
-                                                        <h2 className="text-white"> {DashboardNo.shortlisted}</h2>
-                                                        <p className="mb-0 color-card-head">Applicants</p>
-                                                    </div>
-                                                </div>
-                                                <h6 className="text-white">short listed</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Slider>
+                <div className='main-section' >
+                    <div className='d-flex' >
+                        <div className='main-section-one' >
+                            <div className='main-section-one-image' >
                             </div>
+                            <div className='main-section-one1' >
+                                <div className='main-section-one1-div' >
+                                    <div className='d-flex'>
+                                        <h1 className='col-10 main-section-one1-title'>Admission Status</h1>
+                                        <div className='main-section-one1-button'>
+                                            <p className='col-12 main-section-one1-button-title' >Show all</p>
+                                        </div>
+                                    </div>
 
-
-
-
-
-
-
-
-                            <div className="bbr col-xl-12 col-sm-12 grid-margin stretch-card">
-                                <div className="card">
-                                    <div className="card-body px-0 overflow-auto">
-                                        <div className="table-responsive">
-
-
-                                            {/* <div className="ag-theme-alpine" id='mn' style={{height:height-210, width:width}}> */}
-                                            <div className="ag-theme-alpine" id='mn' style={{ height: height - 210 }}>
-                                                {width > 1024 && <AgGridReact
-                                                    gridOptions={gridOptions}
-                                                    immutableData={true}
-                                                    getRowNodeId={getRowNodeId}
-                                                    rowData={rowData}
-                                                    onGridReady={onGridReady}></AgGridReact>}
-
-                                                {width <= 1024 && <AgGridReact
-                                                    gridOptions={gridOptionsMobile}
-                                                    immutableData={true}
-                                                    getRowNodeId={getRowNodeId}
-                                                    rowData={rowData}
-                                                    onGridReady={onGridReady}></AgGridReact>}
+                                    <div className='' style={{ marginTop: '20x' }} >
+                                        <p className='main-section-one1-button-title1' style={{ marginBottom: '20px' }} >Program</p>
+                                        <div className='program-block' >
+                                            <div className='d-flex'>
+                                                <div className='col-2'>
+                                                    <div className='program-block-col1' >
+                                                        <img src={digree} width='40px' height='40px' />
+                                                    </div>
+                                                </div>
+                                                <div className='col-4 program-block-col2' >
+                                                    <h5 className='program-block-col2-title1' >Bachelor in Business Administration</h5>
+                                                    <h6 className='program-block-col2-title2'>School of Management Studies (SOMS)</h6>
+                                                </div>
+                                                <div className='col-2 program-block-col3' >
+                                                    <h5 className='program-block-col3-title' >APRIL 17, 2022</h5>
+                                                </div>
+                                                <div className='col-2 program-block-col4' >
+                                                    <p className='program-block-col4-title' >Approved</p>
+                                                </div>
+                                                <div className='col-2 program-block-col5 ml-5' >
+                                                    <img src={threedots} />
+                                                </div>
                                             </div>
+                                        </div>
+                                    </div>
 
-
-
-
-
-
-
-
-
-                                            {/* {DashboardData && DashboardData.length>0 && <table className="table">
-                                            <thead className="bg-light">
-                                                
-                                                <tr>
-                                                    {
-                                                         DashboardData[0].fieldDetails.map((item)=><th key={item.name}>{item.name}</th>)
-                                                    }
-                                                    
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {
-                                                    DashboardData.map((item)=><tr key={item.id}>{
-                                                        item.fieldDetails.map((item1)=><td>{
-                                                            item1.value
-                                                            }</td>)
-                                                    }</tr>)
-                                                }
-                                                
-                                                
-                                                
-                                                
-                                               
-                                               
-
-                                            </tbody>
-                                        </table>} */}
+                                    <div className='' style={{ marginTop: '70px' }} >
+                                        <p className='main-section-one1-button-title1' style={{ marginBottom: '20px' }} >Certificate Courses</p>
+                                        <div className='program-block'  >
+                                            <div className='d-flex'>
+                                                <div className='col-2'>
+                                                    <div className='program-block-col11' >
+                                                        <img src={book} width='40px' height='40px' />
+                                                    </div>
+                                                </div>
+                                                <div className='col-4 program-block-col2' >
+                                                    <h5 className='program-block-col2-title1' >Certificate in Information Security</h5>
+                                                    <h6 className='program-block-col2-title2'>Duration : 6 months</h6>
+                                                </div>
+                                                <div className='col-2 program-block-col3' >
+                                                    <h5 className='program-block-col3-title' >June 11, 2022</h5>
+                                                </div>
+                                                <div className='col-2 program-block-col41' >
+                                                    <p className='program-block-col4-title1' >Pending</p>
+                                                </div>
+                                                <div className='col-2 program-block-col5 ml-5' >
+                                                    <img src={threedots} />
+                                                </div>
+                                            </div>
                                         </div>
 
+                                        <div className='program-block' style={{ marginTop: "40px" }} >
+                                            <div className='d-flex'>
+                                                <div className='col-2'>
+                                                    <div className='program-block-col12' >
+                                                        <img src={book1} width='40px' height='40px' />
+                                                    </div>
+                                                </div>
+                                                <div className='col-4 program-block-col2' >
+                                                    <h5 className='program-block-col2-title1' >Appreciation course in Environment</h5>
+                                                    <h6 className='program-block-col2-title2'>Duration : 3 months</h6>
+                                                </div>
+                                                <div className='col-2 program-block-col3' >
+                                                    <h5 className='program-block-col3-title' >MAY 26, 2022</h5>
+                                                </div>
+                                                <div className='col-2 program-block-col41' >
+                                                    <p className='program-block-col4-title1' >Pending</p>
+                                                </div>
+                                                <div className='col-2 program-block-col5 ml-5' >
+                                                    <img src={threedots} />
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div className='main-section-one2' >
+                                ssdc
+                            </div>
                         </div>
+                        <div className='main-section-two' >
+                            <div className='main-section-two1' >
+                                <div className='d-flex pt-4' >
+                                    <div className='col-10' >
+                                        <h1 className='main-section-two1-heding' >notification</h1>
+                                    </div>
+                                    <div className='col-2' >
+                                        <img src={arrow} />
+                                    </div>
+                                </div>
 
+                                <div>
+                                    <div className='d-flex mt-4'>
+                                        <div className='col-2' >
+                                            <img src={Avatar} />
+                                        </div>
+                                        <div className='col-10'  >
+                                            <h6 className='notification-text' >Alex requested to follow you  </h6>
+                                        </div>
+                                    </div>
+                                    <div style={{ marginLeft: "80px" }} >
+                                        <button className='btn btn-primary' >Accept</button>
+                                        <button className='btn btn-secondary' style={{ marginLeft: "10px" }} >Reject</button>
+                                    </div>
+                                    <p className='time' style={{ marginLeft: "100px" }}>Today at 9:42 AM</p>
+                                </div>
 
+                                <div>
+                                    <div className='d-flex mt-4'>
+                                        <div className='col-2' >
+                                            <img src={a1} />
+                                        </div>
+                                        <div className='col-10'  >
+                                            <h6 className='notification-text' >Ray Arnold left 6 message on BBA Admission Form  </h6>
+                                        </div>
+                                    </div>
+                                    <p className='time' style={{ marginLeft: "100px" }}>Yesterday at 11:42 PM</p>
+                                </div>
 
+                                <div>
+                                    <div className='d-flex mt-4'>
+                                        <div className='col-2' >
+                                            <img src={a2} />
+                                        </div>
+                                        <div className='col-10'  >
+                                            <h6 className='notification-text' >Dennis Nedry <p className='content-color' >emailed</p> on  </h6>
+                                            <h6>Certificate
+                                                in Information Security </h6>
+                                            <div className='d-flex mt-3' >
+                                                <span className='line' ></span>
+                                                <p style={{ marginLeft: '10px' }} className='cotation-content' >
+                                                    “It is a long established fact that a reader will be distracted by
+                                                    the readable content of a page when looking at its layout”
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className='time' style={{ marginLeft: "100px" }}>Yesterday at 5:42 PM</p>
+                                </div>
 
+                                <div>
+                                    <div className='d-flex mt-4'>
+                                        <div className='col-2' >
+                                            <img src={a3} />
+                                        </div>
+                                        <div className='col-10'  >
+                                            <h6 className='notification-text' >John Hammond invited you for
+                                                Nebular SOC2 research  </h6>
+                                        </div>
+                                    </div>
+                                    <p className='time' style={{ marginLeft: "100px" }}>Last Wednesday at 11:15 AM</p>
+                                </div>
 
+                            </div>
+                            <div className='main-section-two2' >
+                                <div className='main-section-two1' >
+                                    <div className='d-flex pt-4' >
+                                        <div className='col-10' >
+                                            <h1 className='main-section-two1-heding' >Inbox</h1>
+                                        </div>
+                                        <div className='col-2' >
+                                            <img src={arrow} />
+                                        </div>
+                                    </div>
 
+                                    <div>
+                                        <div className='d-flex mt-4'>
+                                            <div className='col-3' >
+                                                <img src={dp1} width='70px' height='70px' />
+                                            </div>
+                                            <div className='col-7 mt-4 ml-3'  >
+                                                <h6 className='notification-text' >Luy Robin </h6>
+                                            </div>
+                                            <div className='col-2 mt-3' >
+                                                <img src={three} />
+                                            </div>
+                                        </div>
+                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                    </div>
+                                    <div>
+                                        <div className='d-flex mt-4'>
+                                            <div className='col-2' >
+                                                <img src={dp2}  width='70px' height='70px'/>
+                                            </div>
+                                            <div className='col-5 mt-4 ml-4'  >
+                                                <h6 className='notification-text' >Salome Blanca</h6>
+                                            </div>
+                                            <div className='col-5 mt-3' >
+                                                <img src={four} />
+                                            </div>
+                                        </div>
+                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                    </div>
+                                    <div>
+                                        <div className='d-flex mt-4'>
+                                            <div className='col-2' >
+                                                <img src={dp3}  width='70px' height='70px' />
+                                            </div>
+                                            <div className='col-5 mt-4 ml-4'  >
+                                                <h6 className='notification-text' >Abby Rodgers  </h6>
+                                            </div>
+                                            <div className='col-5 mt-3' >
+                                                <img src={five} />
+                                            </div>
+                                        </div>
+                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                    </div>
+                                    <div>
+                                        <div className='d-flex mt-4'>
+                                            <div className='col-2'  width='70px' height='70px' >
+                                                <img src={dp4} />
+                                            </div>
+                                            <div className='col-5 mt-4 ml-4'  >
+                                                <h6 className='notification-text' >Alex Collins  </h6>
+                                            </div>
+                                            <div className='col-5 ml-3' >
+                                                <img src={seven} />
+                                            </div>
+                                        </div>
+                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
             <Footer />
         </div>

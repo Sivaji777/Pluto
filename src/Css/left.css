@@ -1,30 +1,16 @@
 /* Index file css */
-.home-section{
+/* .home-section{
  margin: 0% 2% 0% 5%;
 }
 
 .home-section-one {
     background-image: url('../images/home-image.png');
     min-height:30vh;
-    /* width: 100%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 'center';
     position: 'relative';
     border-radius: 5px;
-
-
-        /* width: 1041px;
-    height: 693px;
-    left: -154px;
-    top: -254px; */
-
-
-        /* min-height: 5vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 'center';
-    position: 'relative'; */
 }
 
 
@@ -44,4 +30,308 @@
     background-repeat: no-repeat;
     background-position: 'center';
     position: 'relative';
+} */
+
+/* *******************  */
+
+.main-section {
+    background-color: #d1d1d1;
+    width: 100%;
+    min-height: 115vh;
+
+}
+
+.main-section-one {
+    width: 70%;
+    margin: 1.5% 0% 1.5% 1.5%;
+}
+
+.main-section-one-image {
+    background-image: url('../images/home-image.png');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 150px;
+    /* min-height:30vh; */
+    /* width: 100%;
+    height: 200px; */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 'center';
+    position: 'relative'; 
+    border-radius: 7px; */
+}
+
+.main-section-one1 {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 7px;
+}
+
+.main-section-one1-div {
+    padding: 2% 2% 2% 2%;
+}
+
+.main-section-one1-title {
+    width: 250px;
+    height: 24px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #45426E;
+
+}
+
+.main-section-one1-button {
+    width: 80px;
+    height: 30px;
+
+    background: #182A58;
+    border-radius: 5px;
+    padding-top: 8px;
+
+}
+
+.main-section-one1-button-title {
+    width: 51px;
+    height: 11px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+
+.main-section-one1-button-title1 {
+
+    width: 146px;
+    height: 17px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #707C97;
+    margin-left: 2%;
+}
+
+/* .program-block {
+    width: 730px;
+    height: 80px;
+} */
+
+.program-block-col1 {
+    width: 70px;
+    height: 60px;
+    background: rgba(189, 151, 234, 0.2);
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.program-block-col11 {
+    width: 70px;
+    height: 60px;
+
+    background: rgba(219, 230, 105, 0.2);
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+
+.program-block-col12 {
+    width: 70px;
+    height: 60px;
+    border-radius: 4px;
+    padding-left: 15px;
+    padding-top: 7px;
+    background: rgba(244, 53, 231, 0.2);
+}
+
+.program-block-col2-title1 {
+    width: 263px;
+    height: 17px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #323436;
+
+}
+
+.program-block-col2-title2 {
+    width: 316px;
+    height: 17px;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #707C97;
+}
+
+.program-block-col3-title {
+    width: 92px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #707C97;
+
+}
+
+.program-block-col4 {
+    width: 10x;
+    height: 40px;
+
+    background: rgba(56, 193, 86, 0.12);
+    border-radius: 50px;
+}
+
+.program-block-col41 {
+    width: 10x;
+    height: 40px;
+
+    background: rgba(198, 99, 27, 0.1);
+    border-radius: 50px;
+}
+
+.program-block-col4-title {
+    width: 30px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: 0.03em;
+    color: #2BBE2F;
+    padding-top: 9px;
+    padding-left: 16px;
+
+
+}
+
+.program-block-col4-title1 {
+    width: 30px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: 0.03em;
+    color: #E67524;
+    padding-top: 9px;
+    padding-left: 16px;
+
+
+}
+
+
+
+
+.main-section-one2 {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 7px;
+
+}
+
+.main-section-two {
+    width: 30%;
+    margin: 1.5% 1.5% 1.5% 1.5%;
+}
+
+.main-section-two1 {
+    height: 670px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.main-section-two1-heding {
+    width: 142px;
+    height: 16px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #45426E;
+
+}
+
+.main-section-two2 {
+    height: 300px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+
+.notification-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-size: 14px !important;
+}
+
+.time {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #A5ACB8;
+    margin-top: 10px;
+}
+
+.content-color {
+    color: #5A46AA;
+}
+
+.line {
+    width: 18px;
+    height: 100px;
+    background: #DDDEE1;
+    border-radius: 2px;
+}
+
+.chating {
+    width: 200px;
+    /* height: 26px; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: lowercase;
+    color: #707C97;
 }
