@@ -1,0 +1,47 @@
+/* Index file css */
+.home-section{
+ margin: 0% 2% 0% 5%;
+}
+
+.home-section-one {
+    background-image: url('../images/home-image.png');
+    min-height:30vh;
+    /* width: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 'center';
+    position: 'relative';
+    border-radius: 5px;
+
+
+        /* width: 1041px;
+    height: 693px;
+    left: -154px;
+    top: -254px; */
+
+
+        /* min-height: 5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 'center';
+    position: 'relative'; */
+}
+
+
+.admission-icon-div {
+    width: 24.58px;
+    left: calc(50% - 24.58px/2 - 77px);
+    top: 0%;
+    bottom: 0%;
+
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.admission-icon {
+    background-image: url('../images/home-icon.png');
+    min-height: 5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 'center';
+    position: 'relative';
+}
