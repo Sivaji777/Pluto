@@ -901,10 +901,10 @@ function Index() {
                                             <div className='col-3' >
                                                 <img src={dp1} width='70px' height='70px' />
                                             </div>
-                                            <div className='col-7 mt-4 ml-3'  >
+                                            <div className='col-5 mt-4 ml-3'  >
                                                 <h6 className='notification-text' >Luy Robin </h6>
                                             </div>
-                                            <div className='col-2 mt-3' >
+                                            <div className='col-5 mt-3' >
                                                 <img src={three} />
                                             </div>
                                         </div>
