@@ -1,0 +1,76 @@
+.carosel-section {
+    /* padding: 5%; */
+}
+.carosel-section-title1 {
+    width: 113px;
+    height: 17px;
+    margin-top: 5%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 0.04em;
+    color: #ECA940;
+}
+
+.carosel-section-title2 {
+    width: 192px;
+    height: 17px;
+    left: 20px;
+    top: 166px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17px;
+    color: #323436;
+}
+
+.carosel-section-title3 {
+    width: 124px;
+    height: 12px;
+    margin-top: 3%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 12px;
+    color: #9BA3B6;
+}
+
+.button-div {
+    width: 82px;
+    height: 28px;
+    background: #5A46AA;
+    border-radius: 50px;
+    margin-top: 5%;
+}
+
+.button-content {
+    margin-left: 15%;
+}
+
+.button-icon {
+    color: #FFFFFF;
+}
+
+.button-title {
+
+    width: 49px;
+    height: 10px;
+    margin-top: 16%;
+    margin-left: 8%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 10px;
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}

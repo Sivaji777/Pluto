@@ -48,19 +48,15 @@
 
 .main-section-one-image {
     background-image: url('../images/home-image.png');
+    background-color: #cccccc;
+    height: 151px;
+    background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
-    height: 150px;
-    /* min-height:30vh; */
-    /* width: 100%;
-    height: 200px; */
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 'center';
-    position: 'relative'; 
-    border-radius: 7px; */
+    position: relative;
 }
+
+
 
 .main-section-one1 {
     width: 100%;
@@ -122,7 +118,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
 
     color: #707C97;
@@ -227,8 +223,8 @@
     line-height: 13px;
     letter-spacing: 0.03em;
     color: #2BBE2F;
-    padding-top: 9px;
-    padding-left: 16px;
+    padding-top: 10%;
+    padding-left: 15%;
 
 
 }
@@ -243,8 +239,8 @@
     line-height: 13px;
     letter-spacing: 0.03em;
     color: #E67524;
-    padding-top: 9px;
-    padding-left: 16px;
+    padding-top: 13px;
+    padding-left: 23px;
 
 
 }
@@ -266,11 +262,20 @@
     margin: 1.5% 1.5% 1.5% 1.5%;
 }
 
+/* nfy */
 .main-section-two1 {
     height: 670px;
     background-color: white;
     border-radius: 7px;
 }
+
+
+.main-section-two1-smal {
+    height: 65px;
+    background-color: white;
+    border-radius: 7px;
+}
+
 
 .main-section-two1-heding {
     width: 142px;
@@ -287,8 +292,16 @@
 
 }
 
+/* inbox  */
 .main-section-two2 {
-    height: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 5%;
+}
+
+.main-section-two2-smal {
+    height: 63px;
     background-color: white;
     border-radius: 7px;
     margin-top: 5%;

@@ -38,20 +38,7 @@ import dp1 from '../../images/dp1.png'
 import dp2 from '../../images/dp2.png'
 import dp3 from '../../images/dp3.png'
 import dp4 from '../../images/dp4.png'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import CarouselComponent from '../Carousel/CarouselComponent';
 
 function Index() {
 
@@ -93,7 +80,21 @@ function Index() {
     const [Menupos, setMenupos] = useState(false);
     const { height, width } = useWindowDimensions();
 
+
     const [Menupos1, setMenupos1] = useState(false);
+    const [notificationShow, setNotificatioShow] = useState(true)
+    const [inboxShow, setInboxShow] = useState(true)
+
+    const handleshowNotification = () => {
+        setNotificatioShow(!notificationShow)
+    }
+
+    const handleshowInbox = () => {
+        setInboxShow(!inboxShow)
+    }
+
+
+
     const ShowMenu1 = () => {
         if (Menupos1) {
             setMenupos1(false)
@@ -243,20 +244,12 @@ function Index() {
                 valueFormatter: dateFormatter
             },
 
-
-
-
-
-
         ],
         //suppressHorizontalScroll:true,
         rowSelection: 'multiple',
         domLayout: "autoHeight",
         onRowClicked: (event) => history.push(`/Userdetails/${event.data.id}`)
     }
-
-
-
 
 
     const gridOptionsMobile = {
@@ -352,25 +345,12 @@ function Index() {
                 valueFormatter: dateFormatter
             },
 
-
-
-
-
-
         ],
         //suppressHorizontalScroll:true,
         rowSelection: 'multiple',
         domLayout: "autoHeight",
         onRowClicked: (event) => history.push(`/Userdetails/${event.data.id}`)
     }
-
-
-
-
-
-
-
-
 
     const onGridReady = (params) => {
         setGridApi(params.api);
@@ -597,7 +577,9 @@ function Index() {
                 <nav className="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
                     <div className="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
                         <a className="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src={logos} alt="" /></a>
-                        <button className="navbar-toggler navbar-toggler align-self-center mr-2" type="button" onClick={() => ShowMenu1()}>
+                        <button className="navbar-toggler navbar-toggler align-self-center mr-2" type="button"
+                            onClick={() => ShowMenu1()}
+                        >
                             <i className="mdi mdi-menu"></i>
                         </button>
                         <ul className="navbar-nav">
@@ -808,152 +790,193 @@ function Index() {
                                 </div>
                             </div>
                             <div className='main-section-one2' >
-                                ssdc
+                                <CarouselComponent />
                             </div>
                         </div>
                         <div className='main-section-two' >
-                            <div className='main-section-two1' >
-                                <div className='d-flex pt-4' >
-                                    <div className='col-10' >
-                                        <h1 className='main-section-two1-heding' >notification</h1>
-                                    </div>
-                                    <div className='col-2' >
-                                        <img src={arrow} />
+
+                            {
+                                notificationShow == false &&
+                                <div className='main-section-two1-smal' >
+                                    <div className='d-flex pt-4' >
+                                        <div className='col-10' >
+                                            <h1 className='main-section-two1-heding' >notification</h1>
+                                        </div>
+                                        <div className='col-2' onClick={handleshowNotification} >
+                                            <img src={arrow} />
+                                        </div>
                                     </div>
                                 </div>
+                            }
 
-                                <div>
-                                    <div className='d-flex mt-4'>
-                                        <div className='col-2' >
-                                            <img src={Avatar} />
-                                        </div>
-                                        <div className='col-10'  >
-                                            <h6 className='notification-text' >Alex requested to follow you  </h6>
-                                        </div>
-                                    </div>
-                                    <div style={{ marginLeft: "80px" }} >
-                                        <button className='btn btn-primary' >Accept</button>
-                                        <button className='btn btn-secondary' style={{ marginLeft: "10px" }} >Reject</button>
-                                    </div>
-                                    <p className='time' style={{ marginLeft: "100px" }}>Today at 9:42 AM</p>
-                                </div>
-
-                                <div>
-                                    <div className='d-flex mt-4'>
-                                        <div className='col-2' >
-                                            <img src={a1} />
-                                        </div>
-                                        <div className='col-10'  >
-                                            <h6 className='notification-text' >Ray Arnold left 6 message on BBA Admission Form  </h6>
-                                        </div>
-                                    </div>
-                                    <p className='time' style={{ marginLeft: "100px" }}>Yesterday at 11:42 PM</p>
-                                </div>
-
-                                <div>
-                                    <div className='d-flex mt-4'>
-                                        <div className='col-2' >
-                                            <img src={a2} />
-                                        </div>
-                                        <div className='col-10'  >
-                                            <h6 className='notification-text' >Dennis Nedry <p className='content-color' >emailed</p> on  </h6>
-                                            <h6>Certificate
-                                                in Information Security </h6>
-                                            <div className='d-flex mt-3' >
-                                                <span className='line' ></span>
-                                                <p style={{ marginLeft: '10px' }} className='cotation-content' >
-                                                    “It is a long established fact that a reader will be distracted by
-                                                    the readable content of a page when looking at its layout”
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p className='time' style={{ marginLeft: "100px" }}>Yesterday at 5:42 PM</p>
-                                </div>
-
-                                <div>
-                                    <div className='d-flex mt-4'>
-                                        <div className='col-2' >
-                                            <img src={a3} />
-                                        </div>
-                                        <div className='col-10'  >
-                                            <h6 className='notification-text' >John Hammond invited you for
-                                                Nebular SOC2 research  </h6>
-                                        </div>
-                                    </div>
-                                    <p className='time' style={{ marginLeft: "100px" }}>Last Wednesday at 11:15 AM</p>
-                                </div>
-
-                            </div>
-                            <div className='main-section-two2' >
+                            {
+                                notificationShow == true &&
                                 <div className='main-section-two1' >
                                     <div className='d-flex pt-4' >
                                         <div className='col-10' >
-                                            <h1 className='main-section-two1-heding' >Inbox</h1>
+                                            <h1 className='main-section-two1-heding' >notification</h1>
                                         </div>
-                                        <div className='col-2' >
+                                        <div className='col-2' onClick={handleshowNotification} >
                                             <img src={arrow} />
                                         </div>
                                     </div>
 
                                     <div>
                                         <div className='d-flex mt-4'>
-                                            <div className='col-3' >
-                                                <img src={dp1} width='70px' height='70px' />
+                                            <div className='col-2' >
+                                                <img src={Avatar} />
                                             </div>
-                                            <div className='col-5 mt-4 ml-3'  >
-                                                <h6 className='notification-text' >Luy Robin </h6>
-                                            </div>
-                                            <div className='col-5 mt-3' >
-                                                <img src={three} />
+                                            <div className='col-10'  >
+                                                <h6 className='notification-text' >Alex requested to follow you  </h6>
                                             </div>
                                         </div>
-                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                        <div style={{ marginLeft: "80px" }} >
+                                            <button className='btn btn-primary' >Accept</button>
+                                            <button className='btn btn-secondary' style={{ marginLeft: "10px" }} >Reject</button>
+                                        </div>
+                                        <p className='time' style={{ marginLeft: "100px" }}>Today at 9:42 AM</p>
                                     </div>
+
                                     <div>
                                         <div className='d-flex mt-4'>
                                             <div className='col-2' >
-                                                <img src={dp2}  width='70px' height='70px'/>
+                                                <img src={a1} />
                                             </div>
-                                            <div className='col-5 mt-4 ml-4'  >
-                                                <h6 className='notification-text' >Salome Blanca</h6>
-                                            </div>
-                                            <div className='col-5 mt-3' >
-                                                <img src={four} />
+                                            <div className='col-10'  >
+                                                <h6 className='notification-text' >Ray Arnold left 6 message on BBA Admission Form  </h6>
                                             </div>
                                         </div>
-                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                        <p className='time' style={{ marginLeft: "100px" }}>Yesterday at 11:42 PM</p>
                                     </div>
+
                                     <div>
                                         <div className='d-flex mt-4'>
                                             <div className='col-2' >
-                                                <img src={dp3}  width='70px' height='70px' />
+                                                <img src={a2} />
                                             </div>
-                                            <div className='col-5 mt-4 ml-4'  >
-                                                <h6 className='notification-text' >Abby Rodgers  </h6>
-                                            </div>
-                                            <div className='col-5 mt-3' >
-                                                <img src={five} />
+                                            <div className='col-10'  >
+                                                <h6 className='notification-text' >Dennis Nedry <p className='content-color' >emailed</p> on  </h6>
+                                                <h6>Certificate
+                                                    in Information Security </h6>
+                                                <div className='d-flex mt-3' >
+                                                    <span className='line' ></span>
+                                                    <p style={{ marginLeft: '10px' }} className='cotation-content' >
+                                                        “It is a long established fact that a reader will be distracted by
+                                                        the readable content of a page when looking at its layout”
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                        <p className='time' style={{ marginLeft: "100px" }}>Yesterday at 5:42 PM</p>
                                     </div>
+
                                     <div>
                                         <div className='d-flex mt-4'>
-                                            <div className='col-2'  width='70px' height='70px' >
-                                                <img src={dp4} />
+                                            <div className='col-2' >
+                                                <img src={a3} />
                                             </div>
-                                            <div className='col-5 mt-4 ml-4'  >
-                                                <h6 className='notification-text' >Alex Collins  </h6>
-                                            </div>
-                                            <div className='col-5 ml-3' >
-                                                <img src={seven} />
+                                            <div className='col-10'  >
+                                                <h6 className='notification-text' >John Hammond invited you for
+                                                    Nebular SOC2 research  </h6>
                                             </div>
                                         </div>
-                                        <p className='chating' style={{ marginLeft: '100px' }} >Most of its text is made ...</p>
+                                        <p className='time' style={{ marginLeft: "100px" }}>Last Wednesday at 11:15 AM</p>
                                     </div>
                                 </div>
-                            </div>
+                            }
+
+                            {
+                                inboxShow == false &&
+                                <div className='main-section-two2-smal' >
+                                    <div
+                                    // className='main-section-two1-smal1'
+                                    >
+                                        <div className='d-flex pt-4' >
+                                            <div className='col-10' >
+                                                <h1 className='main-section-two1-heding'  >Inbox</h1>
+                                            </div>
+                                            <div className='col-2' onClick={handleshowInbox} >
+                                                <img src={arrow} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                            {
+                                inboxShow == true &&
+                                <div className='main-section-two2' >
+                                    <div
+                                    // className='main-section-two11'
+                                    >
+                                        <div className='d-flex  pt-4' >
+                                            <div className='col-10'  >
+                                                <h1 className='main-section-two1-heding' >Inbox</h1>
+                                            </div>
+                                            <div className='col-2' onClick={handleshowInbox} >
+                                                <img src={arrow} />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div className='d-flex mt-4'>
+                                                <div className='col-3' >
+                                                    <img src={dp1} width='85px' height='85px' style={{ marginTop: '-20px' }} />
+                                                </div>
+                                                <div className='col-6'  >
+                                                    <h6 className='notification-text' >Luy Robin </h6>
+                                                    <p className='chating'>Most of its text is made ...</p>
+                                                </div>
+                                                <div className='col-3' style={{ paddingLeft: "12.6%" }} >
+                                                    <img src={three} />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className='d-flex mt-4'>
+                                                <div className='col-3' >
+                                                    <img src={dp2} width='85px' height='85px' style={{ marginTop: '-20px' }} />
+                                                </div>
+                                                <div className='col-6'  >
+                                                    <h6 className='notification-text' >Salome Blanca</h6>
+                                                    <p className='chating' >Most of its text is made ...</p>
+                                                </div>
+                                                <div className='col-3' style={{ paddingLeft: "12.6%" }} >
+                                                    <img src={four} />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className='d-flex mt-4'>
+                                                <div className='col-3' >
+                                                    <img src={dp3} width='85px' height='85px' style={{ marginTop: '-20px' }} />
+                                                </div>
+                                                <div className='col-6'  >
+                                                    <h6 className='notification-text' >Abby Rodgers  </h6>
+                                                    <p className='chating' >Most of its text is made ...</p>
+                                                </div>
+                                                <div className='col-3' style={{ paddingLeft: "12.6%" }} >
+                                                    <img src={five} />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div className='d-flex mt-4'>
+                                                <div className='col-3' width='85px' height='85px' style={{ marginTop: '-20px' }} >
+                                                    <img src={dp4} />
+                                                </div>
+                                                <div className='col-6'  >
+                                                    <h6 className='notification-text' >Alex Collins  </h6>
+                                                    <p className='chating' >Most of its text is made ...</p>
+                                                </div>
+                                                <div className='col-3' style={{ paddingLeft: "12.6%" }} >
+                                                    <img src={seven} />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
