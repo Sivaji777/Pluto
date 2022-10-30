@@ -17,10 +17,11 @@ import Left from '../Common/Left';
 import Logout from '../Common/Logout';
 import useWindowDimensions from '../Common/useWindowDimensions';
 import arrow from '../../images/arrow.png'
-import digree from '../../images/digree.png'
+import digree from '../../images/degree.png'
 import threedots from '../../images/threedots.png'
-import book from '../../images/book.png'
-import book1 from '../../images/book1.png'
+import book from '../../images/book-y.png'
+import book1 from '../../images/book-p.png'
+import uod from '../../images/uod.png'
 
 import Avatar from '../../images/Avatar.png'
 import a1 from '../../images/a1.png'
@@ -580,19 +581,22 @@ function Index() {
                         <button className="navbar-toggler navbar-toggler align-self-center mr-2" type="button"
                             onClick={() => ShowMenu1()}
                         >
-                            <i className="mdi mdi-menu"></i>
+                            <i className="mdi mdi-arrow-collapse"></i>
                         </button>
                         <ul className="navbar-nav">
 
-                            <li className="nav-item nav-search border-0 ml-1 ml-md-3 ml-lg-5 d-none d-md-flex">
+                            <li className="nav-item nav-search border-0 ml-1   d-none d-md-flex">
+                                <h5 className='hiadam'>Hi Adam <br />
+                                <span className='gmadam'>Good Morning!</span></h5>
 
                                 <div className="input-group">
-                                    <input type="text" className="form-control" placeholder="Search" />
                                     <div className="input-group-append">
                                         <span className="input-group-text">
                                             <i className="mdi mdi-magnify"></i>
                                         </span>
                                     </div>
+                                    <input type="text" className="form-control srch-here" placeholder="Search here" />
+                                    
                                 </div>
 
                             </li>
@@ -600,7 +604,7 @@ function Index() {
                         <ul className="navbar-nav navbar-nav-right ml-lg-auto">
                             <li className="nav-item dropdown">
                                 <Link to={"#"} className="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
-                                    <i className="mdi mdi-bell-outline"></i>
+                                    {/* <i className="mdi mdi-bell-outline"></i> */}
                                 </Link>
                                 <div className="dropdown-menu navbar-dropdown navbar-dropdown-large preview-list"
                                     aria-labelledby="notificationDropdown">
@@ -638,7 +642,7 @@ function Index() {
                             </li>
                             <li className="nav-item dropdown d-none d-sm-flex">
                                 <Link to={"#"} className="nav-link count-indicator dropdown-toggle" id="messageDropdown" data-toggle="dropdown">
-                                    <i className="mdi mdi-email-outline"></i>
+                                    {/* <i className="mdi mdi-email-outline"></i> */}
                                 </Link>
                                 <div className="dropdown-menu navbar-dropdown navbar-dropdown-large preview-list"
                                     aria-labelledby="messageDropdown">
@@ -680,7 +684,7 @@ function Index() {
                                             </>
                                             :
                                             <>
-                                                <div className='user-name'>{localStorage.getItem("UserShortName")}</div>
+                                                <div className='user-name'> <img className='uod' src={uod} width='80px'  />{localStorage.getItem("UserShortName")}</div>
                                             </>
                                     }
 
@@ -695,7 +699,7 @@ function Index() {
                         </ul>
                         <button className="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
                             data-toggle="offcanvas">
-                            <span className="mdi mdi-menu"></span>
+                            <span className="mdi mdi-arrow-expand"></span>
                         </button>
                     </div>
                 </nav>
@@ -717,12 +721,12 @@ function Index() {
                                         <p className='main-section-one1-button-title1' style={{ marginBottom: '20px' }} >Program</p>
                                         <div className='program-block' >
                                             <div className='d-flex'>
-                                                <div className='col-2'>
+                                                <div className='col'>
                                                     <div className='program-block-col1' >
-                                                        <img src={digree} width='40px' height='40px' />
+                                                        <img src={digree} width='30px' height='30px' />
                                                     </div>
                                                 </div>
-                                                <div className='col-4 program-block-col2' >
+                                                <div className='col-5 program-block-col2 b12' >
                                                     <h5 className='program-block-col2-title1' >Bachelor in Business Administration</h5>
                                                     <h6 className='program-block-col2-title2'>School of Management Studies (SOMS)</h6>
                                                 </div>
@@ -730,7 +734,7 @@ function Index() {
                                                     <h5 className='program-block-col3-title' >APRIL 17, 2022</h5>
                                                 </div>
                                                 <div className='col-2 program-block-col4' >
-                                                    <p className='program-block-col4-title' >Approved</p>
+                                                   <div className='bg-colr-o'> <p className='program-block-col4-title' >Approved</p> </div>
                                                 </div>
                                                 <div className='col-2 program-block-col5 ml-5' >
                                                     <img src={threedots} />
@@ -739,24 +743,25 @@ function Index() {
                                         </div>
                                     </div>
 
-                                    <div className='' style={{ marginTop: '70px' }} >
+                                    <div className='' style={{ marginTop: '40px' }} >
                                         <p className='main-section-one1-button-title1' style={{ marginBottom: '20px' }} >Certificate Courses</p>
                                         <div className='program-block'  >
                                             <div className='d-flex'>
-                                                <div className='col-2'>
+                                                <div className='col'>
                                                     <div className='program-block-col11' >
                                                         <img src={book} width='40px' height='40px' />
                                                     </div>
                                                 </div>
-                                                <div className='col-4 program-block-col2' >
-                                                    <h5 className='program-block-col2-title1' >Certificate in Information Security</h5>
+                                                <div className='col-5 program-block-col2 b12' >
+                                                    <h5 className='program-block-col2-title1' >Certificate in Information <br /> Security</h5>
                                                     <h6 className='program-block-col2-title2'>Duration : 6 months</h6>
                                                 </div>
                                                 <div className='col-2 program-block-col3' >
                                                     <h5 className='program-block-col3-title' >June 11, 2022</h5>
                                                 </div>
-                                                <div className='col-2 program-block-col41' >
-                                                    <p className='program-block-col4-title1' >Pending</p>
+                                                <div className='col-2 program-block-col14' >
+                                                    <div className='bg-colr'> <p className='program-block-col4-title1' >Pending</p></div>
+                                                   
                                                 </div>
                                                 <div className='col-2 program-block-col5 ml-5' >
                                                     <img src={threedots} />
@@ -766,20 +771,20 @@ function Index() {
 
                                         <div className='program-block' style={{ marginTop: "40px" }} >
                                             <div className='d-flex'>
-                                                <div className='col-2'>
+                                                <div className='col'>
                                                     <div className='program-block-col12' >
                                                         <img src={book1} width='40px' height='40px' />
                                                     </div>
                                                 </div>
-                                                <div className='col-4 program-block-col2' >
+                                                <div className='col-5 program-block-col2 b12' >
                                                     <h5 className='program-block-col2-title1' >Appreciation course in Environment</h5>
                                                     <h6 className='program-block-col2-title2'>Duration : 3 months</h6>
                                                 </div>
                                                 <div className='col-2 program-block-col3' >
                                                     <h5 className='program-block-col3-title' >MAY 26, 2022</h5>
                                                 </div>
-                                                <div className='col-2 program-block-col41' >
-                                                    <p className='program-block-col4-title1' >Pending</p>
+                                                <div className='col-2 program-block-col14' >
+                                                   <div className='bg-colr'> <p className='program-block-col4-title1' >Pending</p></div> 
                                                 </div>
                                                 <div className='col-2 program-block-col5 ml-5' >
                                                     <img src={threedots} />
@@ -800,7 +805,7 @@ function Index() {
                                 <div className='main-section-two1-smal' >
                                     <div className='d-flex pt-4' >
                                         <div className='col-10' >
-                                            <h1 className='main-section-two1-heding' >notification</h1>
+                                            <h1 className=' main-section-one1-title' >notification</h1>
                                         </div>
                                         <div className='col-2' onClick={handleshowNotification} >
                                             <img src={arrow} />
@@ -814,7 +819,7 @@ function Index() {
                                 <div className='main-section-two1' >
                                     <div className='d-flex pt-4' >
                                         <div className='col-10' >
-                                            <h1 className='main-section-two1-heding' >notification</h1>
+                                            <h1 className=' main-section-one1-title' >notification</h1>
                                         </div>
                                         <div className='col-2' onClick={handleshowNotification} >
                                             <img src={arrow} />
@@ -893,7 +898,7 @@ function Index() {
                                     >
                                         <div className='d-flex pt-4' >
                                             <div className='col-10' >
-                                                <h1 className='main-section-two1-heding'  >Inbox</h1>
+                                                <h1 className='main-section-one1-title'  >Inbox</h1>
                                             </div>
                                             <div className='col-2' onClick={handleshowInbox} >
                                                 <img src={arrow} />
@@ -911,7 +916,7 @@ function Index() {
                                     >
                                         <div className='d-flex  pt-4' >
                                             <div className='col-10'  >
-                                                <h1 className='main-section-two1-heding' >Inbox</h1>
+                                                <h1 className='main-section-one1-title' >Inbox</h1>
                                             </div>
                                             <div className='col-2' onClick={handleshowInbox} >
                                                 <img src={arrow} />

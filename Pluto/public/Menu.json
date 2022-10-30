@@ -1,0 +1,242 @@
+[
+    {
+        "id": "61114c367a89bb9c870ffb1e",
+        "gid": "1",
+        "name": "Cybersecurity and Dependability",
+        "archived": false,
+        "color": null,
+        "createdAt": null,
+        "custom_fields": null,
+        "modifiedAt": null,
+        "notes": null,
+        "workspace": [
+            {
+                "id": null,
+                "name": null,
+                "gid": "1",
+                "type": null,
+                "image": null,
+                "createdBy": null,
+                "createdOn": null
+            }
+        ],
+        "followers": null,
+        "roles": [
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "Super_Admin",
+                "workspaces": null
+            },
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "CEMSE_Associate_Dean",
+                "workspaces": null
+            }
+        ],
+        "roleId": null,
+        "owner": {
+            "id": null,
+            "gid": null,
+            "userId": "Syed.Ali",
+            "firstName": null,
+            "lastName": null,
+            "email": null,
+            "password": null,
+            "phone": null,
+            "type": null,
+            "status": null,
+            "activate": null,
+            "roles": null,
+            "createdOn": null,
+            "photoURL": null,
+            "workspace": null
+        },
+        "totalNo": 15,
+        "review": 7,
+        "shortListedNo": 3
+    },
+    {
+        "id": "61151105d00119d578082df0",
+        "gid": "2",
+        "name": "Systems (Computer Science)",
+        "archived": false,
+        "color": null,
+        "createdAt": null,
+        "custom_fields": null,
+        "modifiedAt": null,
+        "notes": null,
+        "workspace": [
+            {
+                "id": null,
+                "name": null,
+                "gid": "1",
+                "type": null,
+                "image": null,
+                "createdBy": null,
+                "createdOn": null
+            }
+        ],
+        "followers": null,
+        "roles": [
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "Super_Admin",
+                "workspaces": null
+            },
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "CEMSE_Associate_Dean",
+                "workspaces": null
+            }
+        ],
+        "roleId": null,
+        "owner": {
+            "id": null,
+            "gid": null,
+            "userId": "Syed.Ali",
+            "firstName": null,
+            "lastName": null,
+            "email": null,
+            "password": null,
+            "phone": null,
+            "type": null,
+            "status": null,
+            "activate": null,
+            "roles": null,
+            "createdOn": null,
+            "photoURL": null,
+            "workspace": null
+        },
+        "totalNo": 3,
+        "review": 2,
+        "shortListedNo": 1
+    },
+    {
+        "id": "611512e1d00119d578082df1",
+        "gid": "3",
+        "name": "Methodology Development in Bioinformatics",
+        "archived": false,
+        "color": null,
+        "createdAt": null,
+        "custom_fields": null,
+        "modifiedAt": null,
+        "notes": null,
+        "workspace": [
+            {
+                "id": null,
+                "name": null,
+                "gid": null,
+                "type": null,
+                "image": null,
+                "createdBy": null,
+                "createdOn": null
+            }
+        ],
+        "followers": null,
+        "roles": [
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "Super_Admin",
+                "workspaces": null
+            },
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "CEMSE_Assocaite_Dean",
+                "workspaces": null
+            }
+        ],
+        "roleId": null,
+        "owner": {
+            "id": null,
+            "gid": null,
+            "userId": "Syed.Ali",
+            "firstName": null,
+            "lastName": null,
+            "email": null,
+            "password": null,
+            "phone": null,
+            "type": null,
+            "status": null,
+            "activate": null,
+            "roles": null,
+            "createdOn": null,
+            "photoURL": null,
+            "workspace": null
+        },
+        "totalNo": 5,
+        "review": 2,
+        "shortListedNo": 1
+    },
+    {
+        "id": "61151647d00119d578082df2",
+        "gid": "4",
+        "name": "Mathematical Foundations of Data Science",
+        "archived": false,
+        "color": null,
+        "createdAt": null,
+        "custom_fields": null,
+        "modifiedAt": null,
+        "notes": null,
+        "workspace": [
+            {
+                "id": null,
+                "name": null,
+                "gid": "1",
+                "type": null,
+                "image": null,
+                "createdBy": null,
+                "createdOn": null
+            }
+        ],
+        "followers": null,
+        "roles": [
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "Super_Admin",
+                "workspaces": null
+            },
+            {
+                "id": null,
+                "gid": null,
+                "description": null,
+                "roleId": "CEMSE_Associate_Dean",
+                "workspaces": null
+            }
+        ],
+        "roleId": null,
+        "owner": {
+            "id": null,
+            "gid": null,
+            "userId": "Syed.Ali",
+            "firstName": null,
+            "lastName": null,
+            "email": null,
+            "password": null,
+            "phone": null,
+            "type": null,
+            "status": null,
+            "activate": null,
+            "roles": null,
+            "createdOn": null,
+            "photoURL": null,
+            "workspace": null
+        },
+        "totalNo": 10,
+        "review": 6,
+        "shortListedNo": 2
+    }
+]

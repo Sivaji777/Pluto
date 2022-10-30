@@ -21317,7 +21317,7 @@ dl li {
   width: 34px;
   height: 34px;
   border-radius: 50px;
-  background: #dabc45;
+  background: #F2B642;
   text-align: center;
   line-height: 2.2;
 }
@@ -21623,9 +21623,10 @@ dl li {
   }
 }
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .input-group {
-  width: 260px;
-  border: 1px solid #ccc;
-  border-radius: 50px;
+  width: 265px;
+  background-color: #F5F7FA;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
 }
 .navbar
   .navbar-menu-wrapper
@@ -21689,12 +21690,15 @@ dl li {
   .nav-item.nav-search
   .input-group
   .tt-hint {
-  background: #ececec;
+  background-color: #F5F7FA;
   border: 0;
-  color: #000;
-  padding: 0.5rem 1rem;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  /* color: #000; */
+  padding: 0.5rem 0.5rem;
+  
+}
+
+.input-group::placeholder{
+  color: #B6B6B6;
 }
 .rtl
   .navbar
@@ -22174,15 +22178,16 @@ dl li {
 /* Sidebar */
 .sidebar {
   min-height: calc(125vh);
-  background: -webkit-gradient(
+  /* background: -webkit-gradient(
     linear,
     left top,
     left bottom,
     from(#3b3784),
     to(#24215f)
   );
-  background: linear-gradient(to bottom, #3b3784, #24215f);
+  background: linear-gradient(to bottom, #3b3784, #24215f); */
   font-family: "Rubik", sans-serif;
+  background-color: #182A58;
   padding: 0;
   width: 260px;
   display: inline-block;
@@ -22196,7 +22201,7 @@ dl li {
 .sidebar .sidebar-brand-wrapper {
   width: auto;
   height: 70px;
-  border-bottom: 1px solid #4e4aa6;
+  /* border-bottom: 1px solid #4e4aa6; */
 }
 .sidebar .sidebar-brand-wrapper .sidebar-brand {
   padding: 10px 0;
@@ -22232,7 +22237,7 @@ dl li {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 0px;
-  border-bottom: 1px solid #4e4aa6;
+  /* border-bottom: 1px solid #4e4aa6; */
 }
 .workflow {
   padding: 0 5px 0 0px;
@@ -22374,7 +22379,7 @@ dl li {
   float: left;
   padding: 5px 8px;
   border-radius: 50%;
-  background: #3b3784;
+  /* background: #3b3784; */
   color: #fff;
   font-weight: 400;
   font-size: 12px;
@@ -22395,7 +22400,42 @@ dl li {
   transition-duration: 0.25s;
   transition-property: background;
   -webkit-transition-property: background;
+  /* border-left-width: 4px sloid #F2B642; */
 }
+.sidebar .nav .nav-item:active{
+  /* border-left: 2px sloid #F2B642; */
+  border-left: 5px solid #F2B642;
+
+background: rgba(215, 216, 216, 0.2);
+
+
+}
+.sidebar .nav .nav-item:hover{
+  border-left: 5px solid #F2B642;
+  
+    background: rgba(215, 216, 216, 0.2);
+
+}
+
+
+.left-hr{
+  width: 90%;
+border-top: 2px solid #F5F7FA;
+opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sidebar .nav .nav-item .collapse {
   z-index: 999;
 }
@@ -22420,6 +22460,12 @@ dl li {
   line-height: 1;
   margin-right: 10px;
   color: #fff;
+}
+.sidebar .nav .nav-item .nav-link i.menu-icon-r{
+  position: absolute;
+  left: 225px;
+  font-size: 18px;
+  margin-top: 2px ;
 }
 .rtl .sidebar .nav .nav-item .nav-link i.menu-icon {
   margin-left: 10px;
@@ -22541,7 +22587,7 @@ dl li {
   .nav:not(.sub-menu)
   > .nav-item:hover:not(.nav-category):not(.nav-profile)
   > .nav-link {
-  color: #625bd9;
+  /* color: #625bd9; */
 }
 .sidebar .nav.sub-menu {
   margin-bottom: 10px;
@@ -22787,7 +22833,7 @@ dl li {
     width: calc(100% - 0px);
   }
   .sidebar-icon-only .sidebar {
-    width: 0px;
+    width: 50px;
   }
   .sidebar-icon-only .sidebar .sidebar-brand-wrapper {
     width: 0px;
@@ -23329,4 +23375,52 @@ dl li {
   .mx-2 {
     margin-right: 0 !important;
   }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+
+
+
+.main-section-one1-title {
+  font-family: 'Nunito', sans-serif !important;
+  font-style: normal;
+  font-weight: bolder !important;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.program-block{
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 5px ;
+}
+.b12{
+  margin-left:2px ;
+}
+.favtop{
+  margin-top: 30px;
+  background-color: #132247;
+}
+
+.favtop2 {
+  margin-top: 70px;
+  /* background-color: #132247; */
+}
+.hiadam{
+  color: #45426F;
+  font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+}
+.gmadam{
+  font-size: 14px;
+    /* line-height: 9px; */
+    color: #707A89;
+    margin-right: 60px;
+    
 }

@@ -4,8 +4,9 @@ import { Link, NavLink } from 'react-router-dom';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import logomini from '../../images/logo-mini.png';
-import logo from '../../images/logo.png';
+// import logomini from '../../images/logo-mini.png';
+import logomini from '../../images/logomini2.png';
+import logo from '../../images/logo-2.png';
 //import Menu from '../../Jsonfiles/Menu.json'
 import '../../Css/left.css'
 import admission from '../../images/home-icon.png'
@@ -117,8 +118,10 @@ function Left(props) {
                     <nav className="sidebar-offcanvas" id="sidebar">
                         <div className="text-center sidebar-brand-wrapper d-flex align-items-center">
                             <Link className="sidebar-brand brand-logo" to={"/dashboard"}><img src={logo} alt="logo" /></Link>
-                            <a className="sidebar-brand brand-logo-mini pt-3" href="index.html"><img src={logomini} alt="logo" /></a>
+                            <a className="sidebar-brand brand-logo-mini pt-3" href="index.html">
+                                <img src={logomini} alt="logo" /></a>
                         </div>
+                         <hr className="left-hr" />
                         <ul className="nav">
                             {/* <li className="nav-item">
                                 <Link className="nav-link" to={"/dashboard"}>
@@ -127,11 +130,13 @@ function Left(props) {
                                 </Link>
                             </li> */}
                             <li className="nav-item">
-                                <div className="nav-link">
+                                
+                                    <div className="nav-link">
 
                                     <i className="mdi mdi-home menu-icon"></i>
-                                    <span className="menu-title">Home</span>
+                                    <span className="menu-title">Home  </span> <i className="mdi mdi-chevron-right menu-icon-r"></i>
                                 </div>
+                               
                             </li>
 
                             <li className="nav-item">
@@ -144,10 +149,11 @@ function Left(props) {
                                         <div className='admission-icon' >
                                         </div>
                                     </div> */}
+                                    <i className="mdi mdi-chart-timeline-variant menu-icon"></i>
                                     <div>
                                         {/* <FaBeer /> */}
                                     </div>
-                                    <span className="menu-title">Admission Status</span>
+                                    <span className="menu-title">Admission Status <i className="mdi mdi-chevron-right menu-icon-r"></i></span>
                                 </div>
                                 <div className="collapse" id="ui-basic">
                                     <ul className="nav flex-column sub-menu">
@@ -166,23 +172,68 @@ function Left(props) {
                             <li className="nav-item">
                                 <div className="nav-link">
                                     {/* <i className="mdi mdi-format-list-bulleted menu-icon"></i> */}
-                                    <MdNotificationsNone  size="25" />
-                                    <span className="menu-title">Notification</span>
+                                    <i className="mdi mdi-bell menu-icon"></i>
+                                    {/* <MdNotificationsNone  size="25" /> */}
+                                    <span className="menu-title"> Notification <i className="mdi mdi-chevron-right menu-icon-r"></i></span>
                                 </div>
                             </li>
                             <li className="nav-item">
                                 <div className="nav-link">
                                     {/* <i className="mdi mdi-format-list-bulleted menu-icon"></i> */}
-                                    <BiMessageSquareDetail size="19" />
-                                    <span className="menu-title">Messages</span>
+                                    <i className="mdi mdi-message-text-outline menu-icon"></i>
+                                    {/* <BiMessageSquareDetail size="19" /> */}
+                                    <span className="menu-title">Messages <i className="mdi mdi-chevron-right menu-icon-r"></i> </span>
                                 </div>
                             </li>
+
+
+                            <div className='favtop'>
+                             <li className="nav-item">
+                                <div className="nav-link">
+                                    {/* <i className="mdi mdi-format-list-bulleted menu-icon"></i> */}
+                                    <i className="mdi mdi-star-outline menu-icon"></i>
+                                    {/* <MdNotificationsNone  size="25" /> */}
+                                    <span className="menu-title"> Favourites <i className="mdi mdi-chevron-right menu-icon-r"></i></span>
+                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <div className="nav-link">
+                                    {/* <i className="mdi mdi-format-list-bulleted menu-icon"></i> */}
+                                    <i className="mdi mdi-book-outline menu-icon"></i>
+                                    {/* <BiMessageSquareDetail size="19" /> */}
+                                    <span className="menu-title">Courses <i className="mdi mdi-chevron-right menu-icon-r"></i> </span>
+                                </div>
+                            </li>
+
+                            </div>
                             {/* <li className="only-mobile nav-item">
                         <div className="nav-link">
                             <i className="mdi mdi-crosshairs-gps menu-icon"></i>
                             <span className="menu-title">Logout</span>
                         </div>
                     </li> */}
+
+
+
+                    <div className='favtop2'>
+                             <li className="nav-item">
+                                <div className="nav-link">
+                                    {/* <i className="mdi mdi-format-list-bulleted menu-icon"></i> */}
+                                    <i className="mdi mdi-star-outline menu-icon"></i>
+                                    {/* <MdNotificationsNone  size="25" /> */}
+                                    <span className="menu-title"> Social Feed <i className="mdi mdi-chevron-right menu-icon-r"></i></span>
+                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <div className="nav-link">
+                                    {/* <i className="mdi mdi-format-list-bulleted menu-icon"></i> */}
+                                    <i className="mdi mdi-information-variant menu-icon"></i>
+                                    {/* <BiMessageSquareDetail size="19" /> */}
+                                    <span className="menu-title">Terms & Condition <i className="mdi mdi-chevron-right menu-icon-r"></i> </span>
+                                </div>
+                            </li>
+
+                            </div>
                         </ul>
                     </nav>
 
@@ -217,7 +268,7 @@ function Left(props) {
 
                         </div>
 
-                        <div className="scrollbar list-workflow">
+                        {/* <div className="scrollbar list-workflow">
                             {Menu.length > 0 &&
                                 <ul>
                                     {
@@ -227,7 +278,7 @@ function Left(props) {
                                 </ul>
                             }
 
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

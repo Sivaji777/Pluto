@@ -1,0 +1,146 @@
+[
+    {
+        "id": "611fe1bdaaaf63acfed3a3e3",
+        "gid": "1",
+        "name": "Education",
+        "description": "Educational Details",
+        "taskId": "1",
+        "fieldDetails": [
+            {
+                "name": "Degree",
+                "value": "PhD",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "University",
+                "value": "MIT,USA",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "PhD Year",
+                "value": "2012",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Subject area of PhD",
+                "value": "Computer Science",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Title of PhD",
+                "value": "privacy-preserving in IoT",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Main PhD research themes",
+                "value": "Cloud Computing, Cloud Ranking, Cloud Services",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Publications Profile URL",
+                "value": "https://scholar.google.com/",
+                "type": "url",
+                "editable": false
+            }
+        ]
+    },
+    {
+        "id": "611fe6eaaaaf63acfed3a3e4",
+        "gid": "2",
+        "name": "References",
+        "description": "References Details",
+        "taskId": "1",
+        "fieldDetails": [
+            {
+                "name": "Reference 1",
+                "value": "XYZ teststt",
+                "type": "text",
+                "editable": false
+            },
+            {
+                "name": "Reference 2",
+                "value": "MIT,USA",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Reference 3",
+                "value": "2012",
+                "type": "String",
+                "editable": false
+            }
+        ]
+    },
+    {
+        "id": "611fe7e5aaaf63acfed3a3e5",
+        "gid": "2",
+        "name": "Employment",
+        "description": "Employment Details",
+        "taskId": "1",
+        "fieldDetails": [
+            {
+                "name": "Current Affiliation",
+                "value": "XYZ teststt",
+                "type": "text",
+                "editable": false
+            }
+        ]
+    },
+    {
+        "id": "611fe921aaaf63acfed3a3e6",
+        "gid": "1",
+        "name": "PersonalDetails",
+        "description": "Personal Details",
+        "taskId": "1",
+        "fieldDetails": [
+            {
+                "name": "First Name",
+                "value": "Victor",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Last Name",
+                "value": "Watkins",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Age",
+                "value": "45",
+                "type": "int",
+                "editable": false
+            },
+            {
+                "name": "Citizenship",
+                "value": "USA",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Gender",
+                "value": "Male",
+                "type": "String",
+                "editable": false
+            },
+            {
+                "name": "Email Address",
+                "value": "syed.ali@gamil.com",
+                "type": "email",
+                "editable": false
+            },
+            {
+                "name": "Contact Number",
+                "value": "0540382099",
+                "type": "phone",
+                "editable": false
+            }
+        ]
+    }
+]
