@@ -238,7 +238,8 @@ const Login = (args) => {
                         </section>
                     </div>
 
-                </> : <Redirect to="/dashboard" />}
+                </> :  <Redirect to="/dashtheme" />}
+                {/* // <Redirect to="/dashboard" />} */}
         </>
         </div>
     )

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
+import Dashtheme from './Components/dashtheme/Dashtheme';
+import Dashtheme1 from './Components/dashtheme/Dashtheme1';
 import Index from './Components/Index/Index';
 import Listing from './Components/Listing/Listing';
 import Login from './Components/Login/Login';
@@ -40,6 +42,12 @@ const App = () => {
         </Route>
         <Route exact path="/registration">
           <Registration />
+        </Route>
+        <Route exact path="/dashtheme">
+          <Dashtheme />
+        </Route>
+        <Route exact path="/dashtheme">
+          <Dashtheme1/>
         </Route>
         <Route exact path="/dashboard">
           <Index />

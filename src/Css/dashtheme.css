@@ -1,0 +1,33 @@
+.themeq1 {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   
+}
+.ques1{
+
+    margin-top: 300px;
+}
+.yesBtn{
+    margin-top: 40px;
+        background: #5A46AA;
+        padding: 0px 15px;
+        display: inline-block;
+        border-radius: 9px;
+        text-align: left;
+        color: #FFF;
+        line-height: 47px;
+        height: 47px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+        /* text-transform: uppercase; */
+        text-align: center;
+        position: inherit;
+        left: 0px;
+        bottom: 0px;
+        width: 80px;
+}
