@@ -31,3 +31,65 @@ display: flex;
         bottom: 0px;
         width: 80px;
 }
+
+
+.role{
+    display: flex;
+    
+}
+.ryesBtn1{
+    margin-top: 40px;
+        background: #fbfbfb;
+        padding: auto;
+        border: 2px solid #D9D9D9;
+        border-radius: 35px;
+        text-align: center;
+        color: #000;
+        line-height: 47px;
+        height: 47px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+        width: 130px;
+
+}
+.ryesBtn{
+     margin-top: 40px;
+     margin-left: 70px;
+        background: #fbfbfb;
+        padding: auto;
+        border: 2px solid #D9D9D9;
+        border-radius: 35px;
+        text-align: center;
+        color: #000;
+        line-height: 47px;
+        height: 47px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+        width: 130px;
+
+}
+.ryesBtn span{
+    padding: 0px 10px ;
+
+}
+
+.styled-input {
+    font-size: 14px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: 25px;
+}
+.styled-input input {
+width: 500px;
+
+}

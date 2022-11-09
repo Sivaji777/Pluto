@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch, useLocation } from 'react-router-dom';
 import Dashtheme from './Components/dashtheme/Dashtheme';
-import Dashtheme1 from './Components/dashtheme/Dashtheme1';
+import Dashtheme1 from './Components/Dashtheme1/Dashtheme1';
+import Dashtheme2 from './Components/Dashtheme2/Dashtheme2';
+import Dashtheme3 from './Components/Dashtheme3/Dashtheme3';
+import Dashtheme4 from './Components/Dashtheme4/Dashtheme4';
+import Dashtheme5 from './Components/Dashtheme5/Dashtheme5';
+import Dashtheme6 from './Components/Dashtheme6/Dashtheme6';
 import Index from './Components/Index/Index';
 import Listing from './Components/Listing/Listing';
 import Login from './Components/Login/Login';
@@ -31,6 +36,7 @@ const App = () => {
   if(localStorage.getItem("UserName") === null && location.pathname !== '/registration'  && location.pathname !== '/reset-password'){
     return <Index />
     //  <Login UpdateFromLogin={UpdateFromLogin}/>
+    // 
   }
  
 
@@ -46,8 +52,23 @@ const App = () => {
         <Route exact path="/dashtheme">
           <Dashtheme />
         </Route>
-        <Route exact path="/dashtheme">
+        <Route exact path="/dashtheme1">
           <Dashtheme1/>
+        </Route>
+        <Route exact path="/dashtheme2">
+          <Dashtheme2/>
+        </Route>
+        <Route exact path="/dashtheme3">
+          <Dashtheme3/>
+        </Route>
+         <Route exact path="/dashtheme4">
+          <Dashtheme4/>
+        </Route>
+         <Route exact path="/dashtheme5">
+          <Dashtheme5/>
+        </Route>
+        <Route exact path="/dashtheme6">
+          <Dashtheme6/>
         </Route>
         <Route exact path="/dashboard">
           <Index />
