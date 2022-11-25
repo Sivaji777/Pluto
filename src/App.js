@@ -34,8 +34,8 @@ const App = () => {
     }
   }
   if(localStorage.getItem("UserName") === null && location.pathname !== '/registration'  && location.pathname !== '/reset-password'){
-    return <Index />
-    //  <Login UpdateFromLogin={UpdateFromLogin}/>
+    return <Login UpdateFromLogin={UpdateFromLogin}/>
+    //  <Index />
     // 
   }
  
